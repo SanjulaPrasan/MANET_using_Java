@@ -25,20 +25,20 @@ public class Server {
 
             }
 
-            } catch (IOException e){
-
-            }
+        } catch (IOException e){
 
         }
 
-        public void closeServerSocket(){
-            try {
-                if (serverSocket != null){
-                    serverSocket.close();
-                }
-            } catch (IOException e){
-                e.printStackTrace();
+    }
+
+    public void closeServerSocket(){
+        try {
+            if (serverSocket != null){
+                serverSocket.close();
             }
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) throws IOException {
